@@ -1,0 +1,132 @@
+{
+  "projects": [
+    {
+      "id": "stockstar",
+      "name": {
+        "zh": "StockStar 股票学习",
+        "en": "StockStar"
+      },
+      "description": {
+        "zh": "通过交互式星图、学习路径和真实案例，像探索星空一样学习股票知识。1200+概念、300+关联、26K+学习者。",
+        "en": "Learn stock market knowledge through interactive star maps, learning paths, and real-world cases. 1200+ concepts, 300+ links, 26K+ learners."
+      },
+      "domain": "zhigupu.com",
+      "url": "https://zhigupu.com/",
+      "tags": ["股票", "金融", "教育", "Stocks", "Finance"],
+      "status": "online",
+      "icon": ""
+    },
+    {
+      "id": "game",
+      "name": {
+        "zh": "经典游戏大厅",
+        "en": "Classic Game Hall"
+      },
+      "description": {
+        "zh": "免费在线小游戏合集，包含扫雷、纸牌接龙、贪吃蛇、俄罗斯方块、象棋等20+款经典游戏。单HTML文件，无需下载，离线可玩。",
+        "en": "Free online classic games collection including Minesweeper, Solitaire, Snake, Tetris, Chess and 20+ more. Single HTML files, no download needed, playable offline."
+      },
+      "domain": "game.zhigupu.com",
+      "url": "https://game.zhigupu.com/",
+      "tags": ["游戏", "娱乐", "经典", "Games"],
+      "status": "online",
+      "icon": ""
+    },
+    {
+      "id": "tools",
+      "name": {
+        "zh": "投资学习工具箱",
+        "en": "Investment Toolbox"
+      },
+      "description": {
+        "zh": "18个免费在线投资计算器，涵盖市盈率、PEG、ROE杜邦分析、股息率、复利、仓位管理、DCF估值等。无需注册。",
+        "en": "18 free online calculators for stock valuation, risk, and returns analysis. Includes PE ratio, PEG, ROE DuPont, dividend yield, DCF valuation and more."
+      },
+      "domain": "tools.zhigupu.com",
+      "url": "https://tools.zhigupu.com/",
+      "tags": ["工具", "投资", "计算器", "Tools"],
+      "status": "online",
+      "icon": ""
+    },
+    {
+      "id": "skills",
+      "name": {
+        "zh": "AI 技能中心",
+        "en": "AI Skills Hub"
+      },
+      "description": {
+        "zh": "发现最佳 AI Agent 技能，100+ AI 技能指南，帮助你构建更智能的 AI 应用。",
+        "en": "Discover best AI Agent skills. 100+ AI skills guide to help you build smarter AI applications."
+      },
+      "domain": "skills.zhigupu.com",
+      "url": "https://skills.zhigupu.com/",
+      "tags": ["AI", "Agent", "技能", "Skills"],
+      "status": "online",
+      "icon": ""
+    },
+    {
+      "id": "learns",
+      "name": {
+        "zh": "BatchLearn 编程课程",
+        "en": "BatchLearn"
+      },
+      "description": {
+        "zh": "系统化编程课程平台，每门课程100课时。涵盖数据结构、Docker、Go、Kubernetes、Linux、机器学习、Python、Rust等。",
+        "en": "Systematic programming courses, 100 lessons each. Covers Data Structures, Docker, Go, Kubernetes, Linux, ML, Python, Rust and more."
+      },
+      "domain": "learns.zhigupu.com",
+      "url": "https://learns.zhigupu.com/",
+      "tags": ["编程", "课程", "学习", "Coding", "Courses"],
+      "status": "online",
+      "icon": ""
+    },
+    {
+      "id": "music",
+      "name": {
+        "zh": "云音乐播放器",
+        "en": "Cloud Music Player"
+      },
+      "description": {
+        "zh": "基于网易云音乐接口的在线音乐播放器，免费畅听海量歌曲。",
+        "en": "Online music player powered by NetEase Cloud Music API. Free access to millions of songs."
+      },
+      "domain": "music.zhigupu.com",
+      "url": "https://music.zhigupu.com/",
+      "tags": ["音乐", "播放器", "Music", "Player"],
+      "status": "online",
+      "icon": ""
+    },
+    {
+      "id": "docs",
+      "name": {
+        "zh": "OmniDev 文档中心",
+        "en": "OmniDev Docs"
+      },
+      "description": {
+        "zh": "OmniDev AI 平台文档，包含全功能 AI 开发平台（IDE、Agent、RAG、工作流、部署）和可插拔知识库引擎的详细指南。",
+        "en": "OmniDev AI platform documentation. Comprehensive docs for the all-in-one AI development platform and pluggable knowledge engine for RAG applications."
+      },
+      "domain": "docs.zhigupu.com",
+      "url": "https://docs.zhigupu.com/",
+      "tags": ["文档", "AI平台", "Docs", "Platform"],
+      "status": "online",
+      "icon": ""
+    },
+    {
+      "id": "chat",
+      "name": {
+        "zh": "AI 聊天",
+        "en": "AI Chat"
+      },
+      "description": {
+        "zh": "AI 对话应用，与智能助手进行自然语言交互。",
+        "en": "AI chat application for natural language interaction with intelligent assistants."
+      },
+      "domain": "chat.zhigupu.com",
+      "url": "https://chat.zhigupu.com/",
+      "tags": ["AI", "聊天", "Chat"],
+      "status": "online",
+      "icon": ""
+    }
+  ]
+}
