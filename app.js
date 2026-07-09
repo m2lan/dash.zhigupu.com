@@ -11,7 +11,9 @@ const i18n = {
     dev: '开发中',
     offline: '离线',
     footer: '&copy; 2026 All Projects',
-    langBtn: 'EN'
+    langBtn: 'EN',
+    navProjects: '项目',
+    navAbout: '关于我'
   },
   en: {
     title: 'Project Hub',
@@ -22,7 +24,9 @@ const i18n = {
     dev: 'In Dev',
     offline: 'Offline',
     footer: '&copy; 2026 All Projects',
-    langBtn: '中文'
+    langBtn: '中文',
+    navProjects: 'Projects',
+    navAbout: 'About'
   }
 };
 
@@ -103,6 +107,8 @@ function render() {
   document.getElementById('site-subtitle').textContent = t('subtitle');
   document.getElementById('footer-text').innerHTML = t('footer');
   document.getElementById('lang-toggle').textContent = t('langBtn');
+  document.getElementById('nav-projects').textContent = t('navProjects');
+  document.getElementById('nav-about').textContent = t('navAbout');
 
   if (projectsData) {
     const projects = projectsData.projects || [];
