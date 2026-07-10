@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于我 | About Me</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .about-section {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+    .about-header {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    .avatar {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      background: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .about-name {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+    .about-handle {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-top: 4px;
+    }
+    .about-bio {
+      color: var(--text-muted);
+      line-height: 1.8;
+      font-size: 1rem;
+      margin-bottom: 40px;
+    }
+    .about-bio p {
+      margin-bottom: 16px;
+    }
+    .links-section h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: var(--text-muted);
+    }
+    .links-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .link-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 20px;
+      text-decoration: none;
+      color: var(--text);
+      transition: all 0.2s;
+    }
+    .link-item:hover {
+      background: var(--card-hover);
+      border-color: var(--accent);
+    }
+    .link-icon {
+      width: 36px;
+      height: 36px;
+      background: rgba(99, 102, 241, 0.15);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    .link-text {
+      flex: 1;
+    }
+    .link-title {
+      font-weight: 500;
+    }
+    .link-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    @media (max-width: 640px) {
+      .about-header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .avatar {
+        width: 72px;
+        height: 72px;
+        font-size: 1.8rem;
+      }
+      .about-name {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="container">
+      <a href="index.html" class="nav-link" id="nav-projects">项目</a>
+      <a href="about.html" class="nav-link active" id="nav-about">关于我</a>
+      <button class="lang-btn" id="lang-toggle" onclick="toggleLang()">EN</button>
+    </div>
+  </nav>
+
+  <main class="about-section">
+    <div class="about-header">
+      <div class="avatar">Z</div>
+      <div>
+        <div class="about-name">ZYK</div>
+        <div class="about-handle">@m2lan</div>
+      </div>
+    </div>
+
+    <div class="about-bio" id="bio"></div>
+
+    <div class="links-section">
+      <h2 id="links-title">链接</h2>
+      <div class="links-list">
+        <a class="link-item" href="https://github.com/m2lan" target="_blank" rel="noopener">
+          <div class="link-icon">📦</div>
+          <div class="link-text">
+            <div class="link-title">GitHub</div>
+            <div class="link-desc">github.com/m2lan</div>
+          </div>
+        </a>
+        <a class="link-item" href="mailto:zyk0925@gmail.com">
+          <div class="link-icon">✉️</div>
+          <div class="link-text">
+            <div class="link-title">Email</div>
+            <div class="link-desc">zyk0925@gmail.com</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    let lang = localStorage.getItem('lang') || 'zh';
+
+    const i18n = {
+      zh: {
+        title: '关于我',
+        navProjects: '项目',
+        navAbout: '关于我',
+        langBtn: 'EN',
+        linksTitle: '链接',
+        bio: `<p>你好，我是 ZYK，一名专注于互联网产品、工具开发与知识分享的独立开发者。</p>
+              <p>我喜欢探索技术与创意结合的可能性，并持续构建属于自己的数字产品生态。目前已经搭建并运营多个网站项目，涵盖内容聚合、游戏体验、效率工具、技能学习、音乐、文档管理以及 AI 对话等方向。</p>
+              <p>我的目标是通过技术创造更简单、更高效、更有价值的产品，让信息获取、学习成长和日常工作变得更加轻松。</p>
+              <p>在不断开发与迭代的过程中，我关注产品体验、自动化效率以及新技术的应用，希望把每一个想法逐渐变成真正能够被使用的工具。</p>
+              <p>除了独立开发，我也热衷于记录学习过程、分享实践经验，并与更多开发者和创造者交流。</p>
+              <p>欢迎来到我的数字空间，一起探索技术、创造与未来。</p>`
+      },
+      en: {
+        title: 'About Me',
+        navProjects: 'Projects',
+        navAbout: 'About',
+        langBtn: '中文',
+        linksTitle: 'Links',
+        bio: `<p>Hi, I'm ZYK — an indie developer focused on internet products, tool development, and knowledge sharing.</p>
+              <p>I love exploring the intersection of technology and creativity, continuously building my own digital product ecosystem. I've built and operate multiple web projects covering content aggregation, gaming experiences, productivity tools, skill learning, music, documentation management, and AI conversations.</p>
+              <p>My goal is to create simpler, more efficient, and more valuable products through technology — making information access, learning, and daily work easier.</p>
+              <p>In the process of continuous development and iteration, I focus on product experience, automation efficiency, and the application of new technologies, hoping to turn every idea into a tool that can actually be used.</p>
+              <p>Beyond indie development, I'm passionate about documenting my learning process, sharing practical experiences, and connecting with more developers and creators.</p>
+              <p>Welcome to my digital space — let's explore technology, creativity, and the future together.</p>`
+      }
+    };
+
+    function t(key) { return i18n[lang][key]; }
+
+    function toggleLang() {
+      lang = lang === 'zh' ? 'en' : 'zh';
+      localStorage.setItem('lang', lang);
+      render();
+    }
+
+    function render() {
+      document.getElementById('bio').innerHTML = t('bio');
+      document.getElementById('links-title').textContent = t('linksTitle');
+      document.getElementById('nav-projects').textContent = t('navProjects');
+      document.getElementById('nav-about').textContent = t('navAbout');
+      document.getElementById('lang-toggle').textContent = t('langBtn');
+      document.title = t('title');
+    }
+
+    render();
+  </script>
+</body>
+</html>
